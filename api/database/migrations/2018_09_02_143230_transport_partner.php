@@ -21,7 +21,7 @@ class TransportPartner extends Migration
                      $table->double('long');
                      $table->double('lat');
                      $table->string('cs_phone');
-                     $table->int('car_amount');
+                     $table->integer('car_amount');
                      
 
 

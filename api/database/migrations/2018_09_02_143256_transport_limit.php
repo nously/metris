@@ -19,7 +19,7 @@ class TransportLimit extends Migration
             //attr
             $table->date('date');
            
-            $table->int('car_left');
+            $table->integer('car_left');
             
 
 
