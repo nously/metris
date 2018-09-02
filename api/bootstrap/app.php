@@ -87,7 +87,7 @@ $app->register(App\Providers\EventServiceProvider::class);
 //graphql
 
 
-$app->register(Folklore\GraphQL\LumenServiceProvider::class)
+$app->register(Folklore\GraphQL\LumenServiceProvider::class);
 /*
 |--------------------------------------------------------------------------
 | Load The Application Routes
