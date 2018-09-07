@@ -28,7 +28,7 @@ Setelah pekerjaan di-push ke repository ini, project yang ada di server belum be
 ```
 ...buka git bash...
 
-ssh metris@serveo.net -p 9945	# SSH ke server.
+ssh pi@serveo.net -p 9946	# SSH ke server.
 ...masukkan password...		# Sampai sini kita sudah berinteraksi langsung dengan server.
 cd /var/www/html/metris
 git pull
