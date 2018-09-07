@@ -26,3 +26,4 @@ $app = require __DIR__.'/../bootstrap/app.php';
 */
 
 $app->run();
+//$app->run(\Illuminate\Http\Request::capture())
