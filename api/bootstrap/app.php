@@ -26,8 +26,7 @@ $app = new Laravel\Lumen\Application(
 $app->withFacades();
 
 $app->withEloquent();
-// graphql
-$app->configure('graphql');
+
 
 /*
 |--------------------------------------------------------------------------
@@ -84,8 +83,8 @@ $app->register(App\Providers\AppServiceProvider::class);
 $app->register(App\Providers\AuthServiceProvider::class);
 $app->register(App\Providers\EventServiceProvider::class);
 
-//graphql
-
+// graphql
+$app->configure('graphql');
 
 $app->register(Folklore\GraphQL\LumenServiceProvider::class);
 /*

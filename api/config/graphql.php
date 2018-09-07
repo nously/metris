@@ -124,9 +124,12 @@ return [
     'schemas' => [
         'default' => [
             'query' => [
+				'tourist'=> App\GraphQL\Query\accountTouristQuery::class,
 
             ],
             'mutation' => [
+				'registerTourist'=> App\GraphQL\Mutation\registerAccountTourist::class,
+				'login'=> App\GraphQL\Mutation\login::class,
 
             ]
         ]
@@ -148,6 +151,8 @@ return [
      */
     'resolvers' => [
         'default' => [
+            
+
         ],
     ],
 
@@ -181,7 +186,8 @@ return [
      * ]
      */
     'types' => [
-
+            'App\GraphQL\Type\accountType',
+            'App\GraphQL\Type\touristType',
     ],
 
     /*

@@ -18,7 +18,7 @@ class Account extends Migration
             $table->increments('id');
             //attr
             $table->string('phone');
-            $table->string('username');
+            $table->string('username')->unique();
             $table->string('password');
             $table->string('name');
             $table->string('email');
