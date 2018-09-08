@@ -63,10 +63,17 @@ class accountType extends BaseType
                 'type' 	=> Type::boolean(),
                
             ], 
-            'tourist'		=> 	[
-                'type'=> (GraphQL::type('touristType'))
-            ], 
-           
+         
+            'tourist' => [
+              
+                'type' =>(GraphQL::type('touristType')),
+                
+                'resolve' => function ($root, $args) {
+                   
+
+                    return $root->tourist;
+                }
+            ],
             
         ];
     }
