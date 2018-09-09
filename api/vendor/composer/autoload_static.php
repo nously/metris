@@ -97,6 +97,7 @@ class ComposerStaticInitf505c2663e9c4d72a379b54a4a3bb854
         'C' => 
         array (
             'Cron\\' => 5,
+            'CSUNMetaLab\\LumenForceHttps\\' => 28,
         ),
         'A' => 
         array (
@@ -299,6 +300,10 @@ class ComposerStaticInitf505c2663e9c4d72a379b54a4a3bb854
         array (
             0 => __DIR__ . '/..' . '/dragonmantank/cron-expression/src/Cron',
         ),
+        'CSUNMetaLab\\LumenForceHttps\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/csun-metalab/lumen-force-https/src/LumenForceHttps',
+        ),
         'App\\' => 
         array (
             0 => __DIR__ . '/../..' . '/app',
@@ -331,6 +336,13 @@ class ComposerStaticInitf505c2663e9c4d72a379b54a4a3bb854
                 0 => __DIR__ . '/..' . '/folklore/graphql/src',
             ),
         ),
+        'C' => 
+        array (
+            'CSUNMetaLab\\LumenForceHttps\\' => 
+            array (
+                0 => __DIR__ . '/..' . '/csun-metalab/lumen-force-https/src/LumenForceHttps',
+            ),
+        ),
     );
 
     public static $classMap = array (
@@ -338,6 +350,11 @@ class ComposerStaticInitf505c2663e9c4d72a379b54a4a3bb854
         'App\\Events\\Event' => __DIR__ . '/../..' . '/app/Events/Event.php',
         'App\\Events\\ExampleEvent' => __DIR__ . '/../..' . '/app/Events/ExampleEvent.php',
         'App\\Exceptions\\Handler' => __DIR__ . '/../..' . '/app/Exceptions/Handler.php',
+        'App\\GraphQL\\Mutation\\login' => __DIR__ . '/../..' . '/app/GraphQL/Mutation/login.php',
+        'App\\GraphQL\\Mutation\\registerAccountTourist' => __DIR__ . '/../..' . '/app/GraphQL/Mutation/registerAccountTourist.php',
+        'App\\GraphQL\\Query\\accountTouristQuery' => __DIR__ . '/../..' . '/app/GraphQL/Query/accountTouristQuery.php',
+        'App\\GraphQL\\Type\\accountType' => __DIR__ . '/../..' . '/app/GraphQL/Type/accountType.php',
+        'App\\GraphQL\\Type\\touristType' => __DIR__ . '/../..' . '/app/GraphQL/Type/touristType.php',
         'App\\Http\\Controllers\\Controller' => __DIR__ . '/../..' . '/app/Http/Controllers/Controller.php',
         'App\\Http\\Controllers\\ExampleController' => __DIR__ . '/../..' . '/app/Http/Controllers/ExampleController.php',
         'App\\Http\\Middleware\\Authenticate' => __DIR__ . '/../..' . '/app/Http/Middleware/Authenticate.php',
@@ -345,10 +362,17 @@ class ComposerStaticInitf505c2663e9c4d72a379b54a4a3bb854
         'App\\Jobs\\ExampleJob' => __DIR__ . '/../..' . '/app/Jobs/ExampleJob.php',
         'App\\Jobs\\Job' => __DIR__ . '/../..' . '/app/Jobs/Job.php',
         'App\\Listeners\\ExampleListener' => __DIR__ . '/../..' . '/app/Listeners/ExampleListener.php',
+        'App\\Model\\Account' => __DIR__ . '/../..' . '/app/Model/Account.php',
+        'App\\Model\\TourManager' => __DIR__ . '/../..' . '/app/Model/TourManager.php',
+        'App\\Model\\Tourist' => __DIR__ . '/../..' . '/app/Model/Tourist.php',
+        'App\\Model\\TransportLimit' => __DIR__ . '/../..' . '/app/Model/TransportLimit.php',
+        'App\\Model\\TransportPartner' => __DIR__ . '/../..' . '/app/Model/TransportPartner.php',
         'App\\Providers\\AppServiceProvider' => __DIR__ . '/../..' . '/app/Providers/AppServiceProvider.php',
         'App\\Providers\\AuthServiceProvider' => __DIR__ . '/../..' . '/app/Providers/AuthServiceProvider.php',
         'App\\Providers\\EventServiceProvider' => __DIR__ . '/../..' . '/app/Providers/EventServiceProvider.php',
         'App\\User' => __DIR__ . '/../..' . '/app/User.php',
+        'CSUNMetaLab\\LumenForceHttps\\Http\\Middleware\\ForceHttps' => __DIR__ . '/..' . '/csun-metalab/lumen-force-https/src/LumenForceHttps/Http/Middleware/ForceHttps.php',
+        'CSUNMetaLab\\LumenForceHttps\\Providers\\ForceHttpsServiceProvider' => __DIR__ . '/..' . '/csun-metalab/lumen-force-https/src/LumenForceHttps/Providers/ForceHttpsServiceProvider.php',
         'Carbon\\Carbon' => __DIR__ . '/..' . '/nesbot/carbon/src/Carbon/Carbon.php',
         'Carbon\\CarbonInterval' => __DIR__ . '/..' . '/nesbot/carbon/src/Carbon/CarbonInterval.php',
         'Carbon\\CarbonPeriod' => __DIR__ . '/..' . '/nesbot/carbon/src/Carbon/CarbonPeriod.php',

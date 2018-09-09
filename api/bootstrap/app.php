@@ -61,7 +61,8 @@ $app->singleton(
 */
 
 $app->middleware([
-   App\Http\Middleware\ExampleMiddleware::class
+	App\Http\Middleware\ExampleMiddleware::class
+//	CSUNMetaLab\LumenForceHttps\Http\Middleware\ForceHttps::class
 ]);
 
 $app->routeMiddleware([
@@ -85,8 +86,11 @@ $app->register(App\Providers\EventServiceProvider::class);
 
 // graphql
 $app->configure('graphql');
-
 $app->register(Folklore\GraphQL\LumenServiceProvider::class);
+
+// forcehttps
+$app->configure('forcehttps');
+$app->register(CSUNMetaLab\LumenForceHttps\Providers\ForceHttpsServiceProvider::class);
 /*
 |--------------------------------------------------------------------------
 | Load The Application Routes

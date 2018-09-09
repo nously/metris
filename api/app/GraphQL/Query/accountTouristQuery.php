@@ -75,9 +75,6 @@ class accountTouristQuery extends Query
 
     public function resolve($root, $args, $context, ResolveInfo $info)
     {
-        return Account::with(['tourist' => function($q){
-            $q->where('id_account',Account::select('id')->get());
-        }])
-            ->get();
+        return Account::all();
     }
 }

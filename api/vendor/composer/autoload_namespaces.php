@@ -9,4 +9,5 @@ return array(
     'Prophecy\\' => array($vendorDir . '/phpspec/prophecy/src'),
     'Mockery' => array($vendorDir . '/mockery/mockery/library'),
     'Folklore\\GraphQL\\' => array($vendorDir . '/folklore/graphql/src'),
+    'CSUNMetaLab\\LumenForceHttps\\' => array($vendorDir . '/csun-metalab/lumen-force-https/src/LumenForceHttps'),
 );

@@ -1,11 +1,53 @@
 {
     "_readme": [
         "This file locks the dependencies of your project to a known state",
-        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "c4aa7bc7818ebfe9e5518ed2dab83c53",
+    "content-hash": "c44396c529f3bfd4cfe14cf1f3e65c56",
     "packages": [
+        {
+            "name": "csun-metalab/lumen-force-https",
+            "version": "1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/csun-metalab/lumen-force-https.git",
+                "reference": "cc9fb59dfaedafea4c623f199a4d8e8f22d75e11"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/csun-metalab/lumen-force-https/zipball/cc9fb59dfaedafea4c623f199a4d8e8f22d75e11",
+                "reference": "cc9fb59dfaedafea4c623f199a4d8e8f22d75e11",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.5.9"
+            },
+            "type": "library",
+            "autoload": {
+                "classmap": [
+                    "src/LumenForceHttps/"
+                ],
+                "psr-0": {
+                    "CSUNMetaLab\\LumenForceHttps\\": "src/LumenForceHttps/"
+                },
+                "psr-4": {
+                    "CSUNMetaLab\\LumenForceHttps\\": "src/LumenForceHttps/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Matthew Fritz",
+                    "email": "mattf@burbankparanormal.com"
+                }
+            ],
+            "description": "A small Composer package for Lumen that forces HTTPS in the URL via middleware",
+            "time": "2018-01-30T22:43:10+00:00"
+        },
         {
             "name": "doctrine/inflector",
             "version": "v1.3.0",
