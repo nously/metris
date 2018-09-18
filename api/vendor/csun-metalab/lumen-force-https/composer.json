@@ -1,0 +1,27 @@
+{
+    "name": "csun-metalab/lumen-force-https",
+    "description": "A small Composer package for Lumen that forces HTTPS in the URL via middleware",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Matthew Fritz",
+            "email": "mattf@burbankparanormal.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.5.9"
+    },
+    "minimum-stability": "stable",
+    "autoload": {
+        "classmap": [
+            "src/LumenForceHttps/"
+        ],
+        "psr-0": {
+            "CSUNMetaLab\\LumenForceHttps\\": "src/LumenForceHttps/"
+        },
+        "psr-4": {
+            "CSUNMetaLab\\LumenForceHttps\\": "src/LumenForceHttps/"
+        }
+    }
+}
