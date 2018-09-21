@@ -46,35 +46,14 @@ class registerAccountTourist extends Mutation
                 'type' 	=> Type::string(),
                 'rules' => ['required', 'string'],
             ], 
-            'city'		=> 	[
-                'name' 	=> 'city', 		
-                'type' 	=> Type::string(),
-                'rules' => ['required', 'string'],
-            ], 
-            'province'		=> 	[
-                'name' 	=> 'province', 		
-                'type' 	=> Type::string(),
-                'rules' => ['required', 'string'],
-            ], 
+          
             'name'		=> 	[
                 'name' 	=> 'name', 		
                 'type' 	=> Type::string(),
                 'rules' => ['required', 'string'],
             ], 
-            'address'		=> 	[
-                'name' 	=> 'address', 		
-                'type' 	=> Type::string(),
-                'rules' => ['required', 'string'],
-            ], 
-            'isAdmin'		=> 	[
-                'name' 	=> 'isAdmin', 		
-                'type' 	=> Type::boolean(),
-            ],
-            'nik'		=> 	[
-                'name' 	=> 'nik', 		
-                'type' 	=> Type::string(),
-                'rules' => ['required', 'string'],
-            ], 
+           
+           
            
            
         ];
@@ -94,16 +73,16 @@ class registerAccountTourist extends Mutation
     $Account->name           = $args['name'];
     $Account->email          = $args['email'];
     $Account->phone          = $args['phone'];
-    $Account->city           = $args['city'];
-    $Account->province       = $args['province'];
-    $Account->address        = $args['address'];
-    $Account->isAdmin        = $args['isAdmin'];
+    // $Account->city           = $args['city'];
+    // $Account->province       = $args['province'];
+    // $Account->address        = $args['address'];
+    // $Account->isAdmin        = $args['isAdmin'];
     $Account->save();
 
-    $Tourist = new Tourist;
-    $Tourist->nik            = $args['nik'];
-    $Tourist->id_account     = $Account->id;
-    $Tourist->save();
+    // $Tourist = new Tourist;
+    // $Tourist->nik            = $args['nik'];
+    // $Tourist->id_account     = $Account->id;
+    // $Tourist->save();
 
     DB::commit();
     return $Account;

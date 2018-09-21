@@ -26,6 +26,8 @@ class Account extends Migration
             $table->string('city');
             $table->text('address');
             $table->boolean('isAdmin');
+            $table->string('type');
+
 
             //timestamp
             $table->softDeletes();

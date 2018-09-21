@@ -57,7 +57,11 @@ class accountType extends BaseType
                 'type' 	=> Type::string(),
                 'rules' => ['required', 'string'],
             ], 
-            
+            'type'		=> 	[
+                'name' 	=> 'type', 		
+                'type' 	=> Type::string(),
+                'rules' => ['required', 'string'],
+            ], 
             'isAdmin'		=> 	[
                 'name' 	=> 'isAdmin', 		
                 'type' 	=> Type::boolean(),
@@ -74,7 +78,26 @@ class accountType extends BaseType
                     return $root->tourist;
                 }
             ],
-            
+            'tour_manager' => [
+              
+                'type' =>(GraphQL::type('tourManagerType')),
+                
+                'resolve' => function ($root, $args) {
+                   
+
+                    return $root->tourManager;
+                }
+            ],
+            'transport_partner' => [
+              
+                'type' =>(GraphQL::type('transportPartnerType')),
+                
+                'resolve' => function ($root, $args) {
+                   
+
+                    return $root->transportPartner;
+                }
+            ],
         ];
     }
 }

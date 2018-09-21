@@ -7,7 +7,7 @@ use GraphQL\Type\Definition\ResolveInfo;
 use GraphQL\Type\Definition\Type;
 use GraphQL;
 use App\Model\Account;
-class accountTouristQuery extends Query
+class accountQuery extends Query
 {
     protected $attributes = [
         'name' => 'accountTouristQuery',
